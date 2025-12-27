@@ -1,13 +1,11 @@
 name: PNGToJPEG
 options:
   deploymentTarget:
-    macOS: 11.0
+    macOS: 12.0
 targets:
   PNGToJPEG:
     type: application
     platform: macOS
-    deploymentTarget:
-      macOS: 11.0
     sources:
       - App.swift
       - ContentView.swift
