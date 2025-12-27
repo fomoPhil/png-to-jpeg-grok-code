@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B157698ADC9120637CA3BD /* ServiceMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7C052875CCA93521D2610 /* ServiceMain.swift */; };
 		269B45729A565A35F676AB8B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37338496EA74D7176CE8ACB4 /* App.swift */; };
 		6E75CDE95765E8BDBA0F3BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40FECBE5FB54213067C697A /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -14,6 +15,8 @@
 /* Begin PBXFileReference section */
 		37338496EA74D7176CE8ACB4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4700A72965A39F8EF452ED89 /* PNGToJPEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNGToJPEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9D89B10A1CB2C5E6AB659B /* PNGToJPEGService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNGToJPEGService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC7C052875CCA93521D2610 /* ServiceMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMain.swift; sourceTree = "<group>"; };
 		D40FECBE5FB54213067C697A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -23,6 +26,7 @@
 			children = (
 				37338496EA74D7176CE8ACB4 /* App.swift */,
 				D40FECBE5FB54213067C697A /* ContentView.swift */,
+				7EC7C052875CCA93521D2610 /* ServiceMain.swift */,
 				B7B49A8D4959D6D701918917 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -31,6 +35,7 @@
 			isa = PBXGroup;
 			children = (
 				4700A72965A39F8EF452ED89 /* PNGToJPEG.app */,
+				6B9D89B10A1CB2C5E6AB659B /* PNGToJPEGService.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -38,6 +43,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF93A590D10A040002ABD2A2 /* PNGToJPEGService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6774B124C9097E62654CD3 /* Build configuration list for PBXNativeTarget "PNGToJPEGService" */;
+			buildPhases = (
+				AB6BF4787AD43D48673E49FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PNGToJPEGService;
+			packageProductDependencies = (
+			);
+			productName = PNGToJPEGService;
+			productReference = 6B9D89B10A1CB2C5E6AB659B /* PNGToJPEGService.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D967871E5AC6D65ABA75B488 /* PNGToJPEG */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2DF95169288E1ADE32035DE /* Build configuration list for PBXNativeTarget "PNGToJPEG" */;
@@ -79,11 +101,20 @@
 			projectRoot = "";
 			targets = (
 				D967871E5AC6D65ABA75B488 /* PNGToJPEG */,
+				BF93A590D10A040002ABD2A2 /* PNGToJPEGService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AB6BF4787AD43D48673E49FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B157698ADC9120637CA3BD /* ServiceMain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA1A8206FB51FD523A7C85AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +127,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		12B2C90C67FF6176BF1C47CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ServiceInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
 		2C8E3BDD67B60111D0896857 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -187,6 +232,20 @@
 			};
 			name = Debug;
 		};
+		8A4A6B88CEE3A9044624DA5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ServiceInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		8FA18B25F2B99CE4EA004A7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,6 +310,15 @@
 			buildConfigurations = (
 				50D15EEA4CFA332C1C0A60D0 /* Debug */,
 				8FA18B25F2B99CE4EA004A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC6774B124C9097E62654CD3 /* Build configuration list for PBXNativeTarget "PNGToJPEGService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12B2C90C67FF6176BF1C47CD /* Debug */,
+				8A4A6B88CEE3A9044624DA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
