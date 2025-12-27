@@ -1,0 +1,19 @@
+name: PNGToJPEG
+options:
+  deploymentTarget:
+    macOS: 11.0
+targets:
+  PNGToJPEG:
+    type: application
+    platform: macOS
+    deploymentTarget:
+      macOS: 11.0
+    sources:
+      - App.swift
+      - ContentView.swift
+    info:
+      path: Info.plist
+      properties:
+        CFBundleIdentifier: com.example.PNGToJPEG
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"

@@ -1,0 +1,43 @@
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.xcscheme
+*.xcuserstate
+
+# DerivedData
+DerivedData/
+*.xcscmblueprint
+*.xcscheme
+
+# Build products
+build/
+*.app
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
